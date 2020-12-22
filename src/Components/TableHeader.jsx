@@ -18,10 +18,9 @@ export const TableHeader = ({ sortByName, sortByViews, handleSort }) => (
           name="name"
           onClick={handleSort}
         >
-          sort by name
+          sort
         </button>
       </th>
-      <th />
       <th />
       <th>
         <input
@@ -35,7 +34,7 @@ export const TableHeader = ({ sortByName, sortByViews, handleSort }) => (
           name="pageviews"
           onClick={handleSort}
         >
-          pageviews rate
+          sort
         </button>
       </th>
     </tr>

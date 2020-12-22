@@ -1,8 +1,19 @@
-.nav {
-  display: flex;
-  margin: 20px;
+* {
+  box-sizing: border-box;
+}
 
-  * {
-    margin-right: 10px;
-  }
+body {
+  background-image: linear-gradient(rgb(1, 9, 26), #184e6d);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+.wrapper {
+  width: 95vw;
 }

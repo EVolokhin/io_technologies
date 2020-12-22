@@ -16,6 +16,13 @@ export const topAwards = (() => {
   };
 })();
 
+// generate background color to person avatar
+const getRandomColor = () => {
+  const color = Math.floor(Math.random() * 16777216).toString(16);
+
+  return '#000000'.slice(0, -color.length) + color;
+};
+
 // preparing data from JSON and marks the top 3 persons
 export const preparedData = data.map((person, ind) => {
   const id = ind + 1;
@@ -25,6 +32,7 @@ export const preparedData = data.map((person, ind) => {
       ...person,
       id,
       award: topAwards[person.name],
+      avatarColor: getRandomColor(),
     });
   }
 
@@ -32,5 +40,6 @@ export const preparedData = data.map((person, ind) => {
     ...person,
     id,
     award: null,
+    avatarColor: getRandomColor(),
   });
 });

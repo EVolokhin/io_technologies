@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { TableHeader } from './TableHeader';
 import { TableBody } from './TableBody';
+import './dataTable.scss';
 
 export const DataTable = ({ persons, search, setSort }) => {
   const [sortByName, setSortByName] = useState(false);

@@ -12,13 +12,22 @@ export const TableBody = ({ persons, search }) => (
       return (visible && (
         <tr key={person.id}>
           <td>{index + 1}</td>
-          <td>{person.name[0]}</td>
-          <td>{person.name}</td>
-          <td>{`${person.count_pub} публ.`}</td>
+          <td>
+            <span style={{ backgroundColor: person.avatarColor }}>
+              {person.name[0]}
+            </span>
+          </td>
+          <td>
+            <span>
+              {person.name}
+            </span>
+            <br />
+            {`${person.count_pub} публ.`}
+          </td>
           <td>
             {person.award
               ? <img src={person.award} alt="in top" />
-              : 'no'}
+              : null}
           </td>
           <td>{person.pageviews}</td>
         </tr>

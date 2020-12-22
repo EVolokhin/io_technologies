@@ -47,7 +47,7 @@ export const App = () => {
   };
 
   return (
-    <div className="rate">
+    <div className="wrapper">
       <Search
         search={search}
         handleSearch={handleSearch}
