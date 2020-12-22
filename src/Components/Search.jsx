@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import './search.scss';
-import searchIcon from '../resources/images/search.png';
 
 export const Search = ({ search, handleSearch }) => (
   <div className="search">
     <img
       className="search__icon"
-      src={searchIcon}
+      src="./images/search.png"
       alt="search"
     />
     <input
