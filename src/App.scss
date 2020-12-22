@@ -9,11 +9,16 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
   font-family: Roboto, sans-serif;
   margin: 0;
 }
 
-.wrapper {
-  width: 95vw;
+#root { 
+  width: 1024px;;
+}
+
+@media screen and (max-width: 1023px) {
+  #root {
+    width: 95vw;
+  }
 }
