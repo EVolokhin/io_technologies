@@ -13,7 +13,7 @@ export const Pagination = (
 
   // make page numbers
   for (let i = 1; i <= lastPage; i += 1) {
-    const start = (i === 1) ? i : (i - 1) * personPerPage;
+    const start = (i === 1) ? i : (i - 1) * personPerPage + 1;
     let end = 10;
 
     if (i > 1) {
